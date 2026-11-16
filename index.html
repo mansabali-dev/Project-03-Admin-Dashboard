@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Dashboard | Admin Panel</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <a href="#" class="brand">nova<span>.</span></a>
+
+            <p class="menu-label">MAIN MENU</p>
+
+            <nav class="sidebar-nav">
+                <a href="#overview" class="nav-link active">
+                    <span>▦</span> Overview
+                </a>
+
+                <a href="#analytics" class="nav-link">
+                    <span>▥</span> Analytics
+                </a>
+
+                <a href="#orders" class="nav-link">
+                    <span>▤</span> Orders
+                </a>
+
+                <a href="#customers" class="nav-link">
+                    <span>♙</span> Customers
+                </a>
+
+                <a href="#products" class="nav-link">
+                    <span>◫</span> Products
+                </a>
+            </nav>
+
+            <p class="menu-label second-label">PREFERENCES</p>
+
+            <nav class="sidebar-nav">
+                <a href="#settings" class="nav-link">
+                    <span>⚙</span> Settings
+                </a>
+
+                <a href="#help" class="nav-link">
+                    <span>?</span> Help Center
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="upgrade-box">
+                    <h3>Upgrade Plan</h3>
+                    <p>Get more insights with our premium plan.</p>
+                    <a href="#settings">Explore Plans →</a>
+                </div>
+
+                <div class="sidebar-profile">
+                    <div class="avatar">MA</div>
+                    <div>
+                        <strong>Mansab Ali</strong>
+                        <small>Administrator</small>
+                    </div>
+                    <span>⋮</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content" id="overview">
+
+            <!-- Top Navbar -->
+            <header class="topbar">
+
+                <div class="page-title">
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome back! Here's what's happening today.</p>
+                </div>
+
+                <div class="topbar-actions">
+                    <input type="search" placeholder="Search anything...">
+                    <button class="notification" aria-label="Notifications">
+                        ♧ <span></span>
+                    </button>
+                    <div class="top-avatar">MA</div>
+                </div>
+
+            </header>
+
+            <!-- Statistics -->
+            <section class="stats-grid">
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Revenue</span>
+                        <span class="stat-icon purple">₹</span>
+                    </div>
+                    <h2>$48,250</h2>
+                    <p class="growth">↑ 12.8% <span>vs last month</span></p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Orders</span>
+                        <span class="stat-icon blue">▤</span>
+                    </div>
+                    <h2>1,284</h2>
+                    <p class="growth">↑ 8.2% <span>vs last month</span></p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Total Customers</span>
+                        <span class="stat-icon orange">♙</span>
+                    </div>
+                    <h2>8,549</h2>
+                    <p class="growth">↑ 15.4% <span>vs last month</span></p>
+                </article>
+
+                <article class="stat-card">
+                    <div class="stat-top">
+                        <span>Conversion Rate</span>
+                        <span class="stat-icon green">%</span>
+                    </div>
+                    <h2>4.82%</h2>
+                    <p class="growth">↑ 2.1% <span>vs last month</span></p>
+                </article>
+
+            </section>
+
+            <!-- Analytics -->
+            <section class="analytics-grid" id="analytics">
+
+                <article class="panel revenue-panel">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Revenue Analytics</h2>
+                            <p>Monthly revenue performance</p>
+                        </div>
+
+                        <select aria-label="Chart period">
+                            <option>Last 7 months</option>
+                            <option>Last 30 days</option>
+                            <option>This year</option>
+                        </select>
+                    </div>
+
+                    <div class="chart">
+                        <div class="chart-labels">
+                            <span>$50k</span>
+                            <span>$40k</span>
+                            <span>$30k</span>
+                            <span>$20k</span>
+                            <span>$10k</span>
+                            <span>$0</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="chart-lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="bars">
+                                <div class="bar-group">
+                                    <div class="bar" style="--height: 42%"></div>
+                                    <span>May</span>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar" style="--height: 60%"></div>
+                                    <span>Jun</span>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar" style="--height: 48%"></div>
+                                    <span>Jul</span>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar" style="--height: 75%"></div>
+                                    <span>Aug</span>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar" style="--height: 65%"></div>
+                                    <span>Sep</span>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar" style="--height: 88%"></div>
+                                    <span>Oct</span>
+                                </div>
+
+                                <div class="bar-group">
+                                    <div class="bar highlight" style="--height: 100%"></div>
+                                    <span>Nov</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Order Summary -->
+                <article class="panel summary-panel">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Order Summary</h2>
+                            <p>Current order status</p>
+                        </div>
+                    </div>
+
+                    <div class="summary-content">
+
+                        <div class="summary-circle">
+                            <div>
+                                <strong>1,284</strong>
+                                <small>Total Orders</small>
+                            </div>
+                        </div>
+
+                        <div class="summary-list">
+                            <div>
+                                <span class="dot completed"></span>
+                                <span>Completed</span>
+                                <strong>68%</strong>
+                            </div>
+
+                            <div>
+                                <span class="dot pending"></span>
+                                <span>Pending</span>
+                                <strong>22%</strong>
+                            </div>
+
+                            <div>
+                                <span class="dot cancelled"></span>
+                                <span>Cancelled</span>
+                                <strong>10%</strong>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Recent Orders -->
+            <section class="panel orders-panel" id="orders">
+
+                <div class="panel-heading">
+                    <div>
+                        <h2>Recent Orders</h2>
+                        <p>Latest customer transactions</p>
+                    </div>
+
+                    <a href="#orders" class="view-all">View All →</a>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ORDER ID</th>
+                                <th>CUSTOMER</th>
+                                <th>PRODUCT</th>
+                                <th>DATE</th>
+                                <th>AMOUNT</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>#ORD-1024</td>
+                                <td>Ali Ahmed</td>
+                                <td>Smart Watch</td>
+                                <td>Nov 12, 2026</td>
+                                <td>$120.00</td>
+                                <td><span class="status completed-status">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1023</td>
+                                <td>Sarah Khan</td>
+                                <td>Headphones</td>
+                                <td>Nov 12, 2026</td>
+                                <td>$85.00</td>
+                                <td><span class="status pending-status">Pending</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1022</td>
+                                <td>Usman Malik</td>
+                                <td>Sneakers</td>
+                                <td>Nov 11, 2026</td>
+                                <td>$95.00</td>
+                                <td><span class="status completed-status">Completed</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1021</td>
+                                <td>Ayesha Noor</td>
+                                <td>Leather Bag</td>
+                                <td>Nov 10, 2026</td>
+                                <td>$150.00</td>
+                                <td><span class="status cancelled-status">Cancelled</span></td>
+                            </tr>
+
+                            <tr>
+                                <td>#ORD-1020</td>
+                                <td>Hamza Ali</td>
+                                <td>Camera</td>
+                                <td>Nov 09, 2026</td>
+                                <td>$210.00</td>
+                                <td><span class="status completed-status">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="panel activity-panel" id="customers">
+
+                <div class="panel-heading">
+                    <div>
+                        <h2>Recent Activity</h2>
+                        <p>What's happening in your store</p>
+                    </div>
+                </div>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+                        <div class="activity-icon purple">+</div>
+                        <div>
+                            <p><strong>New customer registered</strong></p>
+                            <small>Sarah Khan joined your store.</small>
+                        </div>
+                        <time>10 min ago</time>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon blue">✓</div>
+                        <div>
+                            <p><strong>New order completed</strong></p>
+                            <small>Order #ORD-1024 was completed.</small>
+                        </div>
+                        <time>30 min ago</time>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon orange">↑</div>
+                        <div>
+                            <p><strong>Revenue increased</strong></p>
+                            <small>Your monthly revenue is growing.</small>
+                        </div>
+                        <time>1 hour ago</time>
+                    </div>
+
+                </div>
+
+            </section>
+
+         <footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-about">
+            <h2>Nova<span>Panel</span></h2>
+            <p>
+                Manage your business smarter with Nova Dashboard.
+                Track performance, monitor sales and grow your business.
+            </p>
+
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Dashboard</a>
+            <a href="#">Analytics</a>
+            <a href="#">Orders</a>
+            <a href="#">Customers</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Resources</h3>
+            <a href="#">Help Center</a>
+            <a href="#">Documentation</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@novapanel.com</p>
+            <p>Phone: +92 300 1234567</p>
+            <p>Location: Lahore, Pakistan</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 NovaPanel. All Rights Reserved.</p>
+        <p>Designed with care by NovaPanel Team.</p>
+    </div>
+</footer>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
